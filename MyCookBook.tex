@@ -9,21 +9,36 @@
     bottom=0.75in,
     %twoside
     ]{geometry}
-
 \usepackage[svgnames]{xcolor}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage[svgnames]{xcolor}
+\usepackage[colorlinks=true, bookmarks, bookmarksnumbered, bookmarksopen, bookmarksopenlevel=1,
+linkcolor=Black, citecolor=Green, urlcolor=Grey, filecolor=Maroon,
+pdfpagelayout=OneColumn, pdfnewwindow=true,
+pdfstartview=XYZ, plainpages=false, pdfpagelabels,
+pdfauthor={LyX Team}, pdftex,
+pdftitle={LyX's Figure, Table, Floats, Notes, and Boxes manual},
+pdfsubject={LyX-documentation about figures, tables, floats, notes, and boxes},
+pdfkeywords={LyX, Tables, Figures, Floats, Boxes, Notes},
+breaklinks=true,bookmarksopen,bookmarksdepth=2]{hyperref}
+% --- 
+% Redefinition, symbol included in link:
+\let\orighref\href
+\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+% ---
 \pagestyle{fancy}
-
+% ---
 \raggedcolumns
 \setlength{\multicolsep}{0pt}
 \setlength{\columnseprule}{1pt}
-
+% ---
 \makeatletter
-
+% ---
 \newif\if@mainmatter \@mainmattertrue
-
-%% Borrowed from book.cls
+% ---
+% Borrowed from book.cls
 \newcommand\frontmatter{%
     \cleardoublepage
   \@mainmatterfalse
@@ -33,18 +48,13 @@
   \@mainmattertrue
   \pagenumbering{arabic}}
 \makeatother
-
-%% Vary the colors at will
-
+% ---
+% Vary the colors at will
 \definecolor{vegancolor}{rgb}{0,0.5,0.2}
 \definecolor{veggiecolor}{rgb}{0.91,0.41,0.17}
 \definecolor{headercolor}{rgb}{0.5,0.5,0.5}
 \definecolor{quantitycolor}{rgb}{0.5,0.5,0.5}
-
-%--------------------------------------------------------------------------------------------------------
-% Your "recipes.sty" package starts here:
-%% Thanks to alephzero for the excellent start:
-
+% ---
 \newcommand{\recipe}[2][]{%
     \newpage
     \lhead{}%
@@ -72,10 +82,10 @@
      \fancyhead[L]{\footnotesize\color{headercolor}\textmd{Cuisine: $\quad\,\,$ #1 \\ Total Time: #2}}}
 % Color the quantities
 \newcommand{\quantities}[1]{\textcolor{quantitycolor}{#1}}
-
+% 
 \newcommand{\temp}[1]{%
     $#1^\circ$C}
-%% Optional argument is the width of the graphic, default = 1in
+% Optional argument is the width of the graphic, default = 1in
 \newcommand{\showit}[3][1in]{%
     \begin{center}
         \bigskip
@@ -86,8 +96,8 @@
             \par
         \end{center}%
     }
-
-%% Optional argument for a  heading within the ingredients section
+% ---
+% Optional argument for a  heading within the ingredients section
 \newcommand{\ingredients}[1][]{%
     \if###1##%
         {\color{SteelBlue!80!MidnightBlue}\Large\textsc{Ingredients}}%
@@ -95,8 +105,8 @@
         \emph{#1}%
     \fi
 }
-
-%% Use \obeylines to minimize markup
+% ---
+% Use \obeylines to minimize markup
 \newenvironment{ingreds}{%
     \parindent0pt
     \noindent
@@ -113,11 +123,11 @@
     \end{multicols}%
     \medskip
 }
-
+% 
 \newcounter{stepnum}
-
-%% Optional argument for an italicized pre-step
-%% Also use obeylines to minimize markup here as well
+% ---
+% Optional argument for an italicized pre-step
+% Also use obeylines to minimize markup here as well
 \newenvironment{method}[1][]{%
     \setcounter{stepnum}{0}
     \noindent
@@ -254,7 +264,7 @@
 	\textsc{Stir Fry:}
 	coconut cooking oil
 	\quantities{4-6 cups} mixed vegetables (carrots, brokkoli, pepper, green beans, onion)
-	\ingredients[Serves with:]
+	\textsc{Serves with:}
 	Basmati rice / Rice Noodles
 	Tofu / Chicken / Shrimp / Tempeh
 	peanuts (chopped)
@@ -311,9 +321,9 @@
 
 %--------------------------------------------------------------------------------------------------------
 \recipe[]{Tomato and Ricotta Bruschetta}
-\prepAndCookTime{5 m}{15 m}
+\prepAndCookTime{15 m}{15 m}
 \vegetarianAndServings{2}
-\cuisineAndTotalTime{Italian}{20 m}
+\cuisineAndTotalTime{Italian}{30 m}
 \begin{ingreds}
 	\quantities{1} Mozarella
 	\quantities{75 Gramm} Ricotta
@@ -322,12 +332,12 @@
 	Olivenöl 
 	\quantities{4} grosse Brotschreiben
 	\phantom{...}
-	\ingredients[Tomatenpüree:]
+	\textsc{Tomatenpüree:}
 	Tomatenmark
 	Salz
 	Pfeffer
 	Olivenöl
-	\ingredients[Servieren mit:]
+	\textsc{Servieren mit:}
 	Basilikum
 \end{ingreds}
 
@@ -347,6 +357,74 @@
 	Bestreiche Brotmit Mozarella-Ricotta-Mix. Belege mit gerösteten Tomaten.
 	
 	Verziere mit Basilikum. Betröpfel leicht mit Öl. 
+\end{method}
+
+%--------------------------------------------------------------------------------------------------------
+\recipe[]{Paneer Butter Masala}
+\prepAndCookTime{10 m}{40 m}
+\vegetarianAndServings{3}
+\cuisineAndTotalTime{Indian}{50 m}
+\begin{ingreds}
+	(sunflower) oil
+	\quantities{300 grms} paneer
+	\quantities{2-3} onions (roughly chooped)
+	\quantities{3} tomatos (roughly chooped)
+	\quantities{1 tsp} salt 
+	\quantities{1/3 cup} cashew nuts 
+	ghee 
+	\quantities{1 tbsp} garam masala 
+	coriander leaves 
+	\quantities{50 grms} khoya / condensed milk
+	\quantities{3 tbsp} almond milk
+	\quantities{1 tbsp} sugar 
+	\quantities{3 tbsp} soja cream
+	\quantities{1/4 cup} water
+	salt
+	cumin 
+	paprika powder 
+	cayenne pepper 
+	caraway seeds 
+	%---
+	(optional) kasuri methi
+	(optional) red chilis
+	(optional) kashmiri chili powder
+	(optional) butter
+	%---
+	\textit{Serves with:}
+	naan
+	rice
+\end{ingreds}
+
+\begin{figure}[hp]
+	\centering
+	\includegraphics[width=0.30\textwidth]{recipePictures/PaneerButterMasala}
+	\caption { \href{https://www.youtube.com/watch?v=oYZ--rdHL6I\&ab\_channel=HomeCookingShow}{} }
+\end{figure}
+
+\begin{method}%[Preheat the oven to Gas Mark 4, Electric \temp{180}, Fan \temp{160}.]
+	Heat oil and ghee. Add onions, tomatoes, cashews (\& red chilis). Saute until completely cooked. 
+	
+	Add salt. Cook till tomatoes are mushy. Turn off and let cool down. 
+	
+	Add to a mixer and grind until its a smooth paste.
+	
+	Heat ghee. Add paprika powder, cayenne pepper, caraway seeds (\& red chili powder) ($\sim 20$ secs).
+	
+	Add ground paste \& some water. (water was added to the mixer to remove the remaining paste) 
+	
+	Add garam masala, chopped kirander leaves, cumin (\& kasuri methi). Mix a bit.
+	
+	Close pan and let simmer for $\sim 10$ minutes on low flame. 
+	
+	Meanwhile cut paneer in cubes and mix with some spices. Roast very quickly in seperate pan until little soft. 
+	
+	Add condensed milk, almond milk, sugar and soja cream to the gravy and mix. Add some water if necessary. 
+	
+	Season with salt, and additional spices if needed.
+	
+	Add paneer cubes. Close pan and simmer for $\sim 10$ on low flame. 
+	
+	(optional) Mix in a small cube of butter. 
 \end{method}
 
 %%--------------------------------------------------------------------------------------------------------

@@ -1,5 +1,6 @@
-\contentsline {section}{\numberline {1}Coconut Curried Kale and Sweet Potato}{1}
-\contentsline {section}{\numberline {2}Egg-Tomato-Potato Afghani Omelette}{2}
-\contentsline {section}{\numberline {3}Spicy Coconut Vegetable Stir Fry}{3}
-\contentsline {section}{\numberline {4}Instant Pot Pasta Mushroom Stronganoff}{4}
-\contentsline {section}{\numberline {5}Tomato and Ricotta Bruschetta}{5}
+\contentsline {section}{\numberline {1}Coconut Curried Kale and Sweet Potato}{1}{section.1}
+\contentsline {section}{\numberline {2}Egg-Tomato-Potato Afghani Omelette}{2}{section.2}
+\contentsline {section}{\numberline {3}Spicy Coconut Vegetable Stir Fry}{3}{section.3}
+\contentsline {section}{\numberline {4}Instant Pot Pasta Mushroom Stronganoff}{4}{section.4}
+\contentsline {section}{\numberline {5}Tomato and Ricotta Bruschetta}{5}{section.5}
+\contentsline {section}{\numberline {6}Paneer Butter Masala}{6}{section.6}
