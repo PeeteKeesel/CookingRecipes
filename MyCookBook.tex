@@ -11,9 +11,11 @@
     ]{geometry}
 \usepackage[svgnames]{xcolor}
 \usepackage{graphicx}
+\usepackage{mathpazo}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 \usepackage[svgnames]{xcolor}
+\pagecolor[HTML]{FAF4ED} % Light chalk color
 \usepackage[colorlinks=true, bookmarks, bookmarksnumbered, bookmarksopen, bookmarksopenlevel=1,
 linkcolor=Black, citecolor=Green, urlcolor=Grey, filecolor=Maroon,
 pdfpagelayout=OneColumn, pdfnewwindow=true,
@@ -52,7 +54,7 @@ breaklinks=true,bookmarksopen,bookmarksdepth=2]{hyperref}
 % Vary the colors at will
 \definecolor{vegancolor}{rgb}{0,0.5,0.2}
 \definecolor{veggiecolor}{rgb}{0.91,0.41,0.17}
-\definecolor{headercolor}{rgb}{0.5,0.5,0.5}
+\definecolor{headercolor}{HTML}{2E4542}
 \definecolor{quantitycolor}{rgb}{0.5,0.5,0.5}
 % ---
 \newcommand{\recipe}[2][]{%
@@ -62,7 +64,7 @@ breaklinks=true,bookmarksopen,bookmarksdepth=2]{hyperref}
     \rhead{}%
     \lfoot{}%
     \rfoot{}%
-    \section{#2}%
+    \section{\color{headercolor} \Large\textbf{#2}}%  
     \if###1##%
     \else
         \begin{center}
@@ -100,7 +102,7 @@ breaklinks=true,bookmarksopen,bookmarksdepth=2]{hyperref}
 % Optional argument for a  heading within the ingredients section
 \newcommand{\ingredients}[1][]{%
     \if###1##%
-        {\color{SteelBlue!80!MidnightBlue}\Large\textsc{Ingredients}}%
+        {\color[HTML]{7D6358}\large\textbf{INGREDIENTS}}%
     \else
         \emph{#1}%
     \fi
@@ -131,7 +133,7 @@ breaklinks=true,bookmarksopen,bookmarksdepth=2]{hyperref}
 \newenvironment{method}[1][]{%
     \setcounter{stepnum}{0}
     \noindent
-    {\color{SteelBlue!80!MidnightBlue}\Large\textsc{Instructions}}%
+    {\color[HTML]{7D6358}\large\textbf{INSTRUCTIONS}}%
     \par
     \smallskip
     \if###1##%
@@ -357,6 +359,54 @@ breaklinks=true,bookmarksopen,bookmarksdepth=2]{hyperref}
 	Bestreiche Brotmit Mozarella-Ricotta-Mix. Belege mit gerösteten Tomaten.
 	
 	Verziere mit Basilikum. Betröpfel leicht mit Öl. 
+\end{method}
+
+%--------------------------------------------------------------------------------------------------------
+\recipe[]{Veg Minced Meat Casserole}
+\prepAndCookTime{10 m}{1h}
+\vegetarianAndServings{4}
+\cuisineAndTotalTime{Hearty}{1h 10m}
+\begin{ingreds}
+	(sunflower / olive) oil
+	butter
+	\quantities{8} potatoes
+	\quantities{270g} veganes hack
+	\quantities{2} onions (finely chooped)
+	\quantities{3} garlic cloves (finely chooped)	
+	\quantities{2} carrots (finely chooped)	
+	\quantities{2-3} tomatoes (roughly chooped)	
+	\quantities{1} mozzarella
+	\quantities{100g} cheese (e.g. cheddar)
+	\quantities{1} vegan creme vega
+
+	salt
+	pepper
+	smoked paprika powder 
+	thyme
+	rosemary
+	oregano
+\end{ingreds}
+
+\begin{method}%[Preheat the oven to Gas Mark 4, Electric \temp{180}, Fan \temp{160}.]
+	Oil and butter into large pan. Fry potatoes. Season strongly with coriander, thyme, rosemary, oregano. 
+	
+	Once slightly brown fried, cover with cold water. Let simmer for $\sim 15$m. Once finished, put into separate bowl. 
+	
+	Heat up oil in same pan. Onion in, sweat for $\sim 5$ minutes. Garlic and carrots in. Season slightly with salt, pepper, rosemary, thyme, oregano, smoked paprika. 
+	
+	Make whole in the middle. Little oil. Meat in. Fry slightly.
+	
+	Mix all together. Tomato in. Season if needed. Let simmer for $\sim 10$ minutes. 
+	
+	Creme vega in. Mix together. Another 3-5min.
+	
+	Put into separate bowl.
+	
+	Put potatoes back into pan. Cover with roughly pulled mozzarella.
+	
+	Put meat mix on to. Cover with cheese. 
+	
+	Put into oven for 10 minutes until cheese golden brown.
 \end{method}
 
 %--------------------------------------------------------------------------------------------------------
