@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.21)  16 FEB 2025 17:35
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.21)  10 MAR 2025 09:59
  restricted system commands enabled.
 **MyCookBook.tex
 (./MyCookBook.tex
@@ -555,7 +555,7 @@ Package hyperref Info: Link coloring ON on input line 158.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 166.
 
-<recipePictures/CoconutCurriedKaleAndSweetPotato.png, id=50, 550.055pt x 550.05
+<recipePictures/CoconutCurriedKaleAndSweetPotato.png, id=56, 550.055pt x 550.05
 5pt>
 File: recipePictures/CoconutCurriedKaleAndSweetPotato.png Graphic file (type pn
 g)
@@ -607,7 +607,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 211.
 
-<recipePictures/EggTomatoPotatoAfghaniOmelette.png, id=59, 1333.98375pt x 895.3
+<recipePictures/EggTomatoPotatoAfghaniOmelette.png, id=65, 1333.98375pt x 895.3
 45pt>
 File: recipePictures/EggTomatoPotatoAfghaniOmelette.png Graphic file (type png)
 
@@ -628,7 +628,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 250.
 
-<recipePictures/SpicyCoconutVegetableStirFry.png, id=65, 785.93625pt x 768.8725
+<recipePictures/SpicyCoconutVegetableStirFry.png, id=71, 785.93625pt x 768.8725
 pt>
 File: recipePictures/SpicyCoconutVegetableStirFry.png Graphic file (type png)
 <use recipePictures/SpicyCoconutVegetableStirFry.png>
@@ -648,7 +648,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 292.
 
-<recipePictures/InstantPotPastaMushroomStronganoff.png, id=72, 744.7825pt x 794
+<recipePictures/InstantPotPastaMushroomStronganoff.png, id=78, 744.7825pt x 794
 .97pt>
 File: recipePictures/InstantPotPastaMushroomStronganoff.png Graphic file (type 
 png)
@@ -669,7 +669,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 325.
 
-<recipePictures/TomatoAndRicottaBruschetta.png, id=79, 1710.39pt x 700.6175pt>
+<recipePictures/TomatoAndRicottaBruschetta.png, id=85, 1710.39pt x 700.6175pt>
 File: recipePictures/TomatoAndRicottaBruschetta.png Graphic file (type png)
 <use recipePictures/TomatoAndRicottaBruschetta.png>
 Package luatex.def Info: recipePictures/TomatoAndRicottaBruschetta.png  used on
@@ -701,12 +701,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 413.
 
-<recipePictures/PaneerButterMasala.png, id=89, 821.0675pt x 532.99126pt>
-File: recipePictures/PaneerButterMasala.png Graphic file (type png)
-<use recipePictures/PaneerButterMasala.png>
-Package luatex.def Info: recipePictures/PaneerButterMasala.png  used on input l
-ine 450.
-(luatex.def)             Requested size: 88.89313pt x 57.70207pt.
+<recipePictures/SmokyWhiteBeanShakshuka.jpg, id=95, 642.4pt x 481.8pt>
+File: recipePictures/SmokyWhiteBeanShakshuka.jpg Graphic file (type jpg)
+<use recipePictures/SmokyWhiteBeanShakshuka.jpg>
+Package luatex.def Info: recipePictures/SmokyWhiteBeanShakshuka.jpg  used on in
+put line 437.
+(luatex.def)             Requested size: 88.89313pt x 66.6649pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.32402pt, for example:
@@ -715,23 +715,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.32402pt}.
 
-[7<./recipePictures/PaneerButterMasala.png>] (./MyCookBook.aux)
+[7<./recipePictures/SmokyWhiteBeanShakshuka.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 456.
+
+<recipePictures/Menemen.jpg, id=104, 1204.5pt x 1806.75pt>
+File: recipePictures/Menemen.jpg Graphic file (type jpg)
+<use recipePictures/Menemen.jpg>
+Package luatex.def Info: recipePictures/Menemen.jpg  used on input line 477.
+(luatex.def)             Requested size: 88.89313pt x 133.32246pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.32402pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.32402pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.32402pt}.
+
+[8<./recipePictures/Menemen.jpg>] (./MyCookBook.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `MyCookBook.out' has not changed.
-(rerunfilecheck)             Checksum: A445A8869E15FD56A1FF99E1AC25AA6F;1977.
+(rerunfilecheck)             Checksum: 8BA01C1DC8CE2C6C5F69410DA21B3142;2369.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14479 strings out of 476447
+ 14500 strings out of 476447
  125027,1977958 words of node,token memory allocated
- 454 words of node memory still in use:
-   4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 55 glue_spec,
- 5 attribute_list, 1 write nodes
-   avail lists: 1:1,2:498,3:173,4:109,5:358,6:103,7:5144,8:3,9:383,10:10,11:256
- 36228 multiletter control sequences out of 65536+600000
+ 464 words of node memory still in use:
+   4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 55 glue_spec,
+ 6 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:1,2:410,3:175,4:121,5:358,6:78,7:5144,8:3,9:314,10:10,11:256
+ 36244 multiletter control sequences out of 65536+600000
  76 fonts using 5271503 bytes
  94i,15n,102p,461b,359s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/opentype/public/fontawesome/FontAwesom
@@ -745,10 +763,10 @@ f></usr/local/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf
 ></usr/local/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmromanslant8-regu
 lar.otf></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on MyCookBook.pdf (8 pages, 20139072 bytes).
+Output written on MyCookBook.pdf (9 pages, 17913898 bytes).
 
-PDF statistics: 160 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 131072)
- 57 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 170 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 131072)
+ 65 words of extra memory for PDF output out of 10000 (max. 100000000)
 
