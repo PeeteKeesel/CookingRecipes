@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Mediterranean Diet}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Food List}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}High Intake (Several Times a Day)}{2}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Moderate Intake (Several Times a Week)}{2}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Low Intake (Several Times a Month)}{2}{subsubsection.1.1.3}%
+\contentsline {section}{\numberline {2}High-Protein Food Sources}{3}{section.2}%

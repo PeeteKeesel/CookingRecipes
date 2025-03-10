@@ -1,0 +1,116 @@
+\documentclass[8pt]{extarticle}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage[%
+    papersize={5.5in,8.5in},
+    margin=0.7in,
+    top=0.75in,
+    bottom=0.75in,
+    ]{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{mathpazo}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{tcolorbox}
+\usepackage{titlesec}
+\usepackage{enumitem}
+% --- 
+% Color Theme
+\pagecolor[HTML]{FAF4ED} % Light chalk color
+\definecolor{TitleColor}{HTML}{8B0000} % Dark Red for Titles
+\definecolor{BoxColor}{HTML}{E8D8C4} % Soft Beige for Boxes
+\definecolor{HighlightColor}{HTML}{CD5C5C} % Soft Red for Section Titles
+
+% Hyperlink Style
+\usepackage[colorlinks=true, bookmarksopen,
+linkcolor=Black, citecolor=Green, urlcolor=Grey, filecolor=Maroon,
+pdfpagelayout=OneColumn, pdfstartview=XYZ,
+pdfauthor={Recipe Author}, pdftex,
+pdftitle={Recipe Book},
+breaklinks=true,bookmarksdepth=2]{hyperref}
+
+% Modify Headers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textbf{\textcolor{TitleColor}{Nutritional Notes}}}
+\fancyfoot[C]{\thepage}
+
+% Title Format
+\titleformat{\section}{\Large\bfseries\color{HighlightColor}}{}{0em}{}
+\titleformat{\subsection}{\large\bfseries\color{TitleColor}}{}{0em}{}
+
+%--------------------------------------------------------------------------------------------------------
+\begin{document}
+
+\tableofcontents
+
+\newpage
+
+%--------------------------------------------------------------------------------------------------------
+% MEDITERRANEAN DIET 
+%--------------------------------------------------------------------------------------------------------
+
+\section{Mediterranean Diet}
+
+There is no single Mediterranean diet. The details of what characterizes Mediterranean-style eating can shift from country to country due to differences in culture, ethnic background, religion, economy, geography, and agricultural production. However, the various versions of a Mediterranean diet share common features such as:
+
+\begin{itemize}
+    \item Plentiful vegetables and fruits, whole grains, legumes, fish, nuts, seeds, and olive oil.
+    \item Low to modest amounts of meat and dairy.
+    \item Very limited processed foods or sugars.
+\end{itemize}
+
+\subsection{Food List}
+
+In general, the following foods are eaten \textbf{frequently}, \textbf{moderately}, and \textbf{rarely} as part of the Mediterranean diet:
+
+\subsubsection{High Intake (Several Times a Day)}
+\begin{itemize}
+    \item Fruits
+    \item Vegetables
+    \item Whole grains
+    \item Nuts
+    \item Legumes
+    \item Extra virgin olive oil
+\end{itemize}
+
+\subsubsection{Moderate Intake (Several Times a Week)}
+\begin{itemize}
+    \item Fish/seafood
+    \item Poultry
+    \item Eggs
+    \item Dairy foods such as cheese and yogurt
+\end{itemize}
+
+\subsubsection{Low Intake (Several Times a Month)}
+\begin{itemize}
+    \item Sweets containing added sugars or honey
+    \item Red meat
+\end{itemize}
+
+In addition, red wine may be consumed in low to moderate amounts, usually with meals.
+
+
+\section{High-Protein Food Sources}
+
+High-quality food sources which are complete proteins are (\href{https://www.health.harvard.edu/nutrition/high-protein-foods-the-best-protein-sources-to-include-in-a-healthy-diet#:~:text=Try%20to%20eat%20a%20variety,quality%20protein%20sources}{health.harvard.edu}): 
+
+\begin{itemize}
+	\item \textbf{Fish} like salmon, tuna, and mackerel; not only rich in protein but also contain omega-3 fatty acids, which are beneficial for heart health. Look for seafood options that are lower in methylmercury, such as salmon, anchovies, and trout.
+	\item \textbf{Dairy products}: milk, cheese, and yogurt; are rich in protein, calcium, and other essential nutrients. 
+	\begin{itemize}
+		\item Greek yogurt; high in protein as well as nutrients such as calcium, vitamins, and minerals. 
+		\item Dairy products can be high in saturated fat, so choose low-fat dairy options and limit the amount of cheese you eat.
+	\end{itemize}		
+	\item \textbf{Beans, peas, and lentils} include kidney beans, pinto beans, white beans, black beans, lima beans, fava beans, soybeans, chickpeas, black-eyed peas, pigeon peas, split peas, lentils, and edamame. These plant-based foods are excellent sources of protein as well as fiber, folate, potassium, iron, and zinc.
+	\item \textbf{Nuts and seeds} include almonds, hazelnuts, walnuts, peanuts, chia seeds, pumpkin seeds, sunflower seeds, and peanut butter. They are not only rich in protein but also provide healthy fats, vitamins, and minerals. Nuts are high in fat and calories, so be mindful of portion sizes.
+	\item \textbf{Eggs} contain all of the essential amino acids, making them a complete protein source. Eggs are also a source of vitamins, minerals, healthy fats, and antioxidants.
+	\item \textbf{Quinoa} is a plant-based protein source that is also a complete protein. A cup of cooked quinoa provides about 8 grams of protein and 5 grams of fiber. Quinoa is also a good source of minerals such as manganese, phosphorus, and copper.
+	\item \textbf{Soy products} such as tofu and tempeh are good sources of protein, especially for vegetarians and vegans. One-quarter cup of tofu provides seven grams of protein.
+\end{itemize}
+
+
+
+%--------------------------------------------------------------------------------------------------------
+\end{document}
